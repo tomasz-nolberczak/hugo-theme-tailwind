@@ -22,7 +22,7 @@ Check [https://hugo-theme-tailwind.tomo.dev/](https://hugo-theme-tailwind.tomo.d
  * Google Analytics - add your Google Analytics ID to `hugo.toml`
  * Comments settings for [disqus](https://disqus.com/) and [giscus](https://giscus.app/)
  * Social media link data settings
- * Additional short code: bilibili, asciinema
+ * Additional short code: bilibili, asciinema, n8n-demo
  * Responsive design
  * Multilingual
  * Default image process for lazy load and srcset
