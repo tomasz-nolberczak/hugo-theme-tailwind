@@ -23,6 +23,8 @@
   {{ end }}
 
   {{ range (.Paginate $pages).Pages }}
+    {{ $summary := index (split .Content "</p>") 0 }}
+
     <article
       class="flex max-w-4xl flex-col gap-y-2 border-b-2 border-gray-800 pb-6">
       <div class="flex items-center just gap-x-6">
@@ -33,13 +35,7 @@
         <a href="{{ .RelPermalink }}">{{ .Title | .RenderString }}</a>
       </h3>
 
-      {{ with .Description }}
-        <p class="text-secondary mb-3">{{ . | $.Page.RenderString }}</p>
-      {{ else }}
-        {{ with .Summary }}
-          <p class="text-secondary mb-3">{{ . | $.Page.RenderString }}</p>
-        {{ end }}
-      {{ end }}
+      <p class="text-secondary mb-3">{{ $summary | plainify }}</p>
       <div class="flex items-center gap-x-6">
         <a
           href="{{ .RelPermalink }}"
