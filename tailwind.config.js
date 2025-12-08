@@ -12,5 +12,17 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-primary-gradient': {
+          background: 'linear-gradient(to right, #FFE08A, #382c09)',
+          '-webkit-background-clip': 'text',
+          'background-clip': 'text',
+          color: 'transparent',
+        },
+      });
+    },
+  ],
 };
