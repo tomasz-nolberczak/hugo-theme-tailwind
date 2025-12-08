@@ -18,5 +18,7 @@
       class="post-content text-secondary prose prose-invert prose-quoteless ">
       {{ .Content | safeHTML }}
     </article>
+
+    {{ partial "atoms/tags.html" . }}
   </section>
 {{ end }}
