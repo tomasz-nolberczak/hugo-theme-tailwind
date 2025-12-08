@@ -2,8 +2,8 @@ table_of_contents = "目次"
 open_main_menu = "メインメニューを開く"
 open_lang_switcher = "言語スイッチャーを開く"
 [reading_time]
-  one = "1分読む"
-  other = "{{ .Count }}分読む"
+one = "1分読む"
+other = "{{ .Count }}分読む"
 
 [search]
 title = "検索"
@@ -20,8 +20,8 @@ page_not_found = "ページが見つかりません"
 
 [footer]
 powered_by = "Powered by {{ .Generator }} {{ .Heart }} {{ .Theme }}"
-copyright_with_since ="{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear }} {{ .Copyright }}"
-copyright_wo_since ="{{ .CopyrightSign }} {{ .CurrentYear }} {{ .Copyright }}"
+copyright_with_since = "{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear }} {{ .Copyright }}"
+copyright_wo_since = "{{ .CopyrightSign }} {{ .CurrentYear }} {{ .Copyright }}"
 
 [paginator]
 newer_posts = "新しい投稿"

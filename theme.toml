@@ -26,8 +26,7 @@ features = [
   "pwa",
 ]
 
-
 # If the theme has a single author
 [author]
-  name = 'Xiaoliang Wang'
-  homepage = 'https://tomo.dev'
+name = 'Xiaoliang Wang'
+homepage = 'https://tomo.dev'

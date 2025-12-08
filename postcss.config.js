@@ -5,9 +5,9 @@ const config = {
   plugins: [
     require('tailwindcss')(themeDir + '/tailwind.config.js'),
     require('autoprefixer')({
-      path: [themeDir]
-    })
-  ]
-}
+      path: [themeDir],
+    }),
+  ],
+};
 
-module.exports = config
+module.exports = config;

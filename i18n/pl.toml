@@ -2,9 +2,9 @@ table_of_contents = "Spis treści"
 open_main_menu = "Otwórz menu główne"
 open_lang_switcher = "Zmień język"
 [reading_time]
-  one = "Jedna minuta czytania"
-  many = "{{ .Count }} minut czytania"
-  other = "{{ .Count }} minuty czytania"
+one = "Jedna minuta czytania"
+many = "{{ .Count }} minut czytania"
+other = "{{ .Count }} minuty czytania"
 
 [search]
 title = "Szukaj"
@@ -21,8 +21,8 @@ page_not_found = "Strona nie odnaleziona"
 
 [footer]
 powered_by = "Powered by {{ .Generator }} {{ .Heart }} {{ .Theme }}"
-copyright_with_since ="{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear}} {{ .Copyright }}"
-copyright_wo_since ="{{ .CopyrightSign }} {{ .CurrentYear}} {{ .Copyright }}"
+copyright_with_since = "{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear}} {{ .Copyright }}"
+copyright_wo_since = "{{ .CopyrightSign }} {{ .CurrentYear}} {{ .Copyright }}"
 
 [paginator]
 newer_posts = "Nowsze posty"

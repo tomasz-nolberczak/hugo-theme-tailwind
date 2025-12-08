@@ -1,4 +1,4 @@
-(function() {
+(function () {
   const searchParams = new URLSearchParams(window.location.search);
   const keywords = searchParams.get('search').trim();
   const searchInput = document.getElementById('search-input');
@@ -20,25 +20,27 @@
     threshold: searchOptions.threshold,
     // refer layouts/search/search.json
     keys: [
-      {name: "title", weight: 0.8},
-      {name: "content", weight: 0.5},
-      {name: "tags", weight: 0.2},
-      {name: "categories", weight: 0.2},
+      { name: 'title', weight: 0.8 },
+      { name: 'content', weight: 0.5 },
+      { name: 'tags', weight: 0.2 },
+      { name: 'categories', weight: 0.2 },
     ],
   };
 
   function search(keywords) {
-    fetch('./index.json').then(response => response.json()).then(data => {
-      const fuse = new Fuse(data, fuseOptions);
-      const result = fuse.search(keywords);
-      if (result.length > 0) {
-        showResult(keywords, result);
-        emptyResult.classList.add('hidden');
-      } else {
-        resultContainer.innerHTML = '';
-        emptyResult.classList.remove('hidden');
-      }
-    });
+    fetch('./index.json')
+      .then((response) => response.json())
+      .then((data) => {
+        const fuse = new Fuse(data, fuseOptions);
+        const result = fuse.search(keywords);
+        if (result.length > 0) {
+          showResult(keywords, result);
+          emptyResult.classList.add('hidden');
+        } else {
+          resultContainer.innerHTML = '';
+          emptyResult.classList.remove('hidden');
+        }
+      });
   }
 
   const resultTemplate = `
@@ -78,7 +80,8 @@
     for (const [index, entry] of result.entries()) {
       const item = entry.item;
       const content = entry.item.content;
-      item.snippet = content.substring(0, searchOptions.summaryInclude * 2) + '&hellip;';
+      item.snippet =
+        content.substring(0, searchOptions.summaryInclude * 2) + '&hellip;';
       item.tagIcon = tagIcon;
       item.index = index;
       resultContainer.innerHTML += templateFn(item);
@@ -86,4 +89,4 @@
     const instance = new Mark(resultContainer);
     instance.mark(keywords);
   }
-})()
+})();

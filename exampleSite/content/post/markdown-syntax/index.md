@@ -3,17 +3,8 @@ author = "Hugo Authors"
 title = "Markdown Syntax Guide"
 date = "2019-03-11"
 description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-tags = [
-    "markdown",
-    "css",
-    "html",
-    "tag1",
-    "tag2",
-]
-categories = [
-    "themes",
-    "syntax",
-]
+tags = ["markdown", "css", "html", "tag1", "tag2"]
+categories = ["themes", "syntax"]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 # Photo by <a href="https://unsplash.com/@drucsko?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dávid Drucskó</a> on <a href="https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-text-on-it-eZ_hyar3qqc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
@@ -21,6 +12,7 @@ image = "images/david-drucsko-eZ_hyar3qqc-unsplash.jpg"
 +++
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+
 <!--more-->
 
 ## Headings
@@ -28,10 +20,15 @@ This article offers a sample of basic Markdown syntax that can be used in Hugo c
 The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 
 ## Paragraph
@@ -47,7 +44,7 @@ The blockquote element represents content that is quoted from another source, op
 ### Blockquote without attribution
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+> **Note** that you can use _Markdown syntax_ within a blockquote.
 
 ### Blockquote with attribution
 
@@ -60,16 +57,16 @@ The blockquote element represents content that is quoted from another source, op
 
 Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-box.
 
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
+| Name  | Age |
+| ----- | --- |
+| Bob   | 27  |
+| Alice | 23  |
 
 ### Inline Markdown within tables
 
 | Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
+| --------- | -------- | ------ |
+| _italics_ | **bold** | `code` |
 
 ## Code Blocks
 
@@ -78,13 +75,13 @@ Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-
 ```html {linenos=true}
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Example HTML5 Document</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
 </html>
 ```
 
@@ -102,7 +99,9 @@ Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-
     </html>
 
 ### Code block with Hugo's internal highlight shortcode
+
 {{< highlight html >}}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -125,19 +124,19 @@ Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-
 
 ### Unordered List
 
-* List item
-* Another item
-* And another item
+- List item
+- Another item
+- And another item
 
 ### Nested list
 
-* Fruit
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-  * Milk
-  * Cheese
+- Fruit
+  - Apple
+  - Orange
+  - Banana
+- Dairy
+  - Milk
+  - Cheese
 
 ### List with checkbox
 

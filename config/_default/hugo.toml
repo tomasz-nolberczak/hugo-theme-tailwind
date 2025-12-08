@@ -14,36 +14,36 @@ enableGitInfo = true
 
 [markup]
 [markup.highlight]
-  # lineNos = true
-  noClasses = false
+# lineNos = true
+noClasses = false
 [markup.goldmark]
-  [markup.goldmark.renderer]
-    unsafe = true
-  [markup.goldmark.extensions]
-    [markup.goldmark.extensions.cjk]
-      enable = true
-      eastAsianLineBreaks = true
-      escapedSpace = true
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.cjk]
+enable = true
+eastAsianLineBreaks = true
+escapedSpace = true
 
 [privacy]
-  [privacy.vimeo]
-    disabled = false
-    simple = true
+[privacy.vimeo]
+disabled = false
+simple = true
 
-  [privacy.x]
-    disabled = false
-    enableDNT = true
-    simple = true
+[privacy.x]
+disabled = false
+enableDNT = true
+simple = true
 
-  [privacy.instagram]
-    disabled = false
-    simple = true
+[privacy.instagram]
+disabled = false
+simple = true
 
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
 
 [module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.120.0"
+[module.hugoVersion]
+extended = false
+min = "0.120.0"

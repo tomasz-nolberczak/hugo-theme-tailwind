@@ -2,9 +2,9 @@ table_of_contents = "Содержание"
 open_main_menu = "Открыть главное меню"
 open_lang_switcher = "Открыть переключатель языка"
 [reading_time]
-  one = "{{ .Count }} минуту для чтения"
-  few = "{{ .Count }} минуты для чтения"
-  other = "{{ .Count }} минут для чтения"
+one = "{{ .Count }} минуту для чтения"
+few = "{{ .Count }} минуты для чтения"
+other = "{{ .Count }} минут для чтения"
 
 [search]
 title = "Поиск"
@@ -21,8 +21,8 @@ page_not_found = "Страница не найдена"
 
 [footer]
 powered_by = "Работает на {{ .Generator }} {{ .Heart }} {{ .Theme }}"
-copyright_with_since ="{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear }} {{ .Copyright }}"
-copyright_wo_since ="{{ .CopyrightSign }} {{ .CurrentYear }} {{ .Copyright }}"
+copyright_with_since = "{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear }} {{ .Copyright }}"
+copyright_wo_since = "{{ .CopyrightSign }} {{ .CurrentYear }} {{ .Copyright }}"
 
 [paginator]
 newer_posts = "Более новые сообщения"

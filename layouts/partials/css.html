@@ -3,5 +3,4 @@
   {{- $styles = $styles | fingerprint -}}
 {{ else }}
   {{- $styles = $styles | minify | fingerprint -}}
-{{ end -}}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ end -}} <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />

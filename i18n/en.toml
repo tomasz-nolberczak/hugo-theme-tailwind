@@ -2,8 +2,8 @@ table_of_contents = "Table of Contents"
 open_main_menu = "Open main menu"
 open_lang_switcher = "Open language switcher"
 [reading_time]
-  one = "One minute to read"
-  other = "{{ .Count }} minutes to read"
+one = "One minute to read"
+other = "{{ .Count }} minutes to read"
 
 [search]
 title = "Search"
@@ -20,8 +20,8 @@ page_not_found = "Page not found"
 
 [footer]
 powered_by = "Powered by {{ .Generator }} {{ .Heart }} {{ .Theme }}"
-copyright_with_since ="{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear}} {{ .Copyright }}"
-copyright_wo_since ="{{ .CopyrightSign }} {{ .CurrentYear}} {{ .Copyright }}"
+copyright_with_since = "{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear}} {{ .Copyright }}"
+copyright_wo_since = "{{ .CopyrightSign }} {{ .CurrentYear}} {{ .Copyright }}"
 
 [paginator]
 newer_posts = "Newer posts"

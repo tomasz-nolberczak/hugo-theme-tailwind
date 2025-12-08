@@ -2,8 +2,8 @@ table_of_contents = "目录"
 open_main_menu = "打开菜单"
 open_lang_switcher = "打开语言切换"
 [reading_time]
-  one = "阅读时长{{ .Count }}分钟"
-  other = "阅读时长{{ .Count }}分钟"
+one = "阅读时长{{ .Count }}分钟"
+other = "阅读时长{{ .Count }}分钟"
 
 [search]
 title = "搜索"
@@ -20,8 +20,8 @@ page_not_found = "页面未找到"
 
 [footer]
 powered_by = "Powered by {{ .Generator }} {{ .Heart }} {{ .Theme }}"
-copyright_with_since ="{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear}} {{ .Copyright }}"
-copyright_wo_since ="{{ .CopyrightSign }} {{ .CurrentYear}} {{ .Copyright }}"
+copyright_with_since = "{{ .CopyrightSign }} {{ .SinceYear }} - {{ .CurrentYear}} {{ .Copyright }}"
+copyright_wo_since = "{{ .CopyrightSign }} {{ .CurrentYear}} {{ .Copyright }}"
 
 [paginator]
 newer_posts = "新文章"
