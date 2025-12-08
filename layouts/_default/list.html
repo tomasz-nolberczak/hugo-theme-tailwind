@@ -28,7 +28,7 @@
 
     <article
       class="flex max-w-4xl flex-col gap-y-2 border-b-2 border-gray-800 pb-6">
-      <div class="flex items-center just gap-x-6">
+      <div class="flex items-center gap-x-4 md:gap-x-6">
         {{ partial "atoms/time.html" . }}
       </div>
       <h3 class="font text-primary mb-2 text-3xl font-bold">
@@ -39,7 +39,7 @@
         class="post-content text-secondary prose prose-invert prose-quoteless ">
         <p class="text-secondary mb-3">{{ $summary | plainify }}</p>
       </div>
-      <div class="flex items-center gap-x-6">
+      <div class="flex items-center gap-x-4 md:gap-x-6">
         <a
           href="{{ .RelPermalink }}"
           class="text-primary text-sm hover:underline">
