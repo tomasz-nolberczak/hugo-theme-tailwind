@@ -3,9 +3,7 @@
   {{- $authorDescription := "" -}}
   {{- $authorPhoto := "" -}}
 
-  {{- if .Params.author -}}
-    {{- $author = .Params.author -}}
-  {{- else if and .Site.Params.Author .Site.Params.Author.name -}}
+  {{- if and .Site.Params.Author .Site.Params.Author.name -}}
     {{- $author = .Site.Params.Author.name -}}
   {{- end -}}
 
