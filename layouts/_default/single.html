@@ -19,6 +19,10 @@
       {{ .Content | safeHTML }}
     </article>
 
-    {{ partial "atoms/tags.html" . }}
+    <footer class="flex flex-col gap-y-4 mt-6">
+      {{ partial "block/author.html" . }}
+      {{ partial "atoms/tags.html" . }}
+
+    </footer>
   </section>
 {{ end }}

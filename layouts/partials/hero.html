@@ -1,0 +1,38 @@
+{{- if .Site.Params.showAuthor -}}
+  {{- $author := "" -}}
+  {{- $authorDescription := "" -}}
+  {{- $authorPhoto := "" -}}
+
+  {{- if .Params.author -}}
+    {{- $author = .Params.author -}}
+  {{- else if and .Site.Params.Author .Site.Params.Author.name -}}
+    {{- $author = .Site.Params.Author.name -}}
+  {{- end -}}
+
+  {{- if .Site.Params.Author.description -}}
+    {{- $authorDescription = .Site.Params.Author.description -}}
+  {{- end -}}
+
+  {{- if .Site.Params.Author.photoPath -}}
+    {{- $authorPhoto = .Site.Params.Author.photoPath -}}
+  {{- end -}}
+
+  {{- if $author -}}
+    <div class="flex flex-col justify-center text-center gap-y-4 max-w-4xl">
+      {{- if $authorPhoto -}}
+        <img
+          src="{{ $authorPhoto | relURL }}"
+          alt="Author photo"
+          class="h-12 w-12 mx-auto rounded-full object-cover" />
+      {{- end -}}
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-gradient">
+        {{ $author }}
+      </h1>
+
+      {{- if $authorDescription -}}
+        <p class="text-sm text-secondary">{{ $authorDescription }}</p>
+      {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}
