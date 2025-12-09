@@ -23,7 +23,7 @@
         <img
           src="{{ $authorPhoto | relURL }}"
           alt="Author photo"
-          class="h-12 w-12 mx-auto rounded-full object-cover" />
+          class="h-40 w-40 mx-auto rounded-full object-cover" />
       {{- end -}}
       <h1
         class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-gradient">
@@ -31,7 +31,7 @@
       </h1>
 
       {{- if $authorDescription -}}
-        <p class="text-sm text-secondary">{{ $authorDescription }}</p>
+        <p class="text-secondary">{{ $authorDescription }}</p>
       {{- end -}}
     </div>
   {{- end -}}
